@@ -25,5 +25,6 @@ Gem::Specification.new do |s|
 
 
     s.add_development_dependency 'rspec', '~> 3'
+    s.add_runtime_dependency 'rest-client', '>= 2.0.2'
 
 end
