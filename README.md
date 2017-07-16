@@ -89,7 +89,7 @@ client.stats.api_method
 When hacking on this gem, the REPL `pry` comes in handy. You can load the
 contents of the gem with `pry --gem`.
 
-## Disclaimer
+### Disclaimer
 
 This was rushed for a Angelhack + BCI Labs + Programadores Chile hackathon so this doesn't have any tests :(. Yes, I know...shame on me. But feel free to contribute and make this gem better and better.
 
