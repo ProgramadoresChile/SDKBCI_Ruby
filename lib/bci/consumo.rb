@@ -4,13 +4,20 @@ module Bci
   # The class for BCI consumo API
   class Consumo < Base
     def submodule
-      'creditos_consumo'
+      'creditos-consumo'
     end
 
-    def simulate(params)
-      response_checker(connector.post(url, params.to_json, headers))
+    def simulate(id,params)
+      local_url = "#{url}/#{id}/simulaciones"
+      puts local_url
+      response_checker(connector.post(local_url, params.to_json, headers))
     rescue RestClient::InternalServerError => e
       puts e
+    end
+
+    def all
+      puts url
+      response_checker(connector.get(url, headers))
     end
   end
 end
