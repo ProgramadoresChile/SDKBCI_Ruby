@@ -1,7 +1,8 @@
 PATH
   remote: .
   specs:
-    bci (0.1.0)
+    bci (18.0.0)
+      rest-client (>= 2.0.2)
 
 GEM
   remote: https://rubygems.org/
@@ -45,4 +46,4 @@ DEPENDENCIES
   rspec (~> 3)
 
 BUNDLED WITH
-   1.12.5
+   1.15.4
