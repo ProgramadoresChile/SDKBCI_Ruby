@@ -1,7 +1,7 @@
 module Bci
   # The base class for all api clients
   class Base
-    BASE_URL = 'https://api.us.apiconnect.ibmcloud.com/portal-api-developers-desarrollo/sandbox'.freeze
+    BASE_URL = 'https://apidevelopers.bci.cl'.freeze
 
     def initialize(key = nil)
       @api_key = key
@@ -18,7 +18,7 @@ module Bci
 
     def headers
       {
-        'x-ibm-client-id' => @api_key,
+        'X-IBM-Client-Id' => @api_key,
         accept: 'application/json',
         content_type: 'application/json'
       }
