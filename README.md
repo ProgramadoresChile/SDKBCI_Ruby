@@ -45,7 +45,14 @@ client.consumo.api_method
 
 `api_method` could be one of this:
 
-- simulate(params): [POST] Access to the BCI consumo simulator. `params` is a hash object containing the required data according to BCI documentation.
+- simulate(id, params): [POST] Access to the BCI consumo simulator.
+`id` is a numeric identifier according to BCI documentation.
+`params` is a hash object containing the required data according to BCI documentation.
+
+- all: [GET] Access to the BCI list of all consumo products.
+
+- find(id): [GET] Access to the detailed information of one of the consumo products.
+`id` is a numeric identifier according to BCI documentation.
 
 3. Hipotecario
 
