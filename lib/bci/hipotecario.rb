@@ -4,7 +4,7 @@ module Bci
   # The class for BCI hipotecario API
   class Hipotecario < Base
     def submodule
-      'creditos_hipotecarios'
+      'creditos-hipotecarios/'
     end
 
     def all
